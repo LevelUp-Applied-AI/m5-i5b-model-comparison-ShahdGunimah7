@@ -20,4 +20,8 @@
 - **contract_months:** 1.0
 
 ## Structural Explanation
-The Random Forest assigns a much higher churn probability than Logistic Regression for this sample (0.5998 vs 0.1700). This is likely because the tree captures a threshold-based pattern involving short contract duration (1 month) combined with moderate tenure and low charges, which places the customer in a higher-risk segment. In contrast, Logistic Regression treats features additively and cannot capture this interaction, leading to a much lower predicted probability.
+
+<!-- Write 2-3 sentences explaining WHY these models disagree on this
+     sample. Point to a specific feature interaction, non-monotonic
+     relationship, or threshold effect the tree captured that the
+     linear model could not. -->
