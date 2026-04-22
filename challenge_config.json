@@ -1,0 +1,26 @@
+{
+  "experiment_name": "base_task_repro",
+  "output_base_dir": "challenge_runs",
+  "data_path": "data/telecom_churn.csv",
+  "random_state": 42,
+  "cv_folds": 5,
+  "models": {
+    "LR_default": {
+      "type": "LogisticRegression",
+      "scale": true,
+      "params": {
+        "max_iter": 1000,
+        "random_state": 42
+      }
+    },
+    "RF_default": {
+      "type": "RandomForestClassifier",
+      "scale": false,
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 10,
+        "random_state": 42
+      }
+    }
+  }
+}
